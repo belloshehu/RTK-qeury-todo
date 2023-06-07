@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { useGetTodosQuery } from "../services/api";
 import { Todo } from "./Todo";
 
-export const TodoList = () => {
-  const { data: todos, isLoading } = useGetTodosQuery();
+export const TodoList = ({ todos }) => {
   //   const [todos, setTodos] = useState([]);
 
   return (

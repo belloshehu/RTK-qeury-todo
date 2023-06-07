@@ -1,12 +1,6 @@
 {
   "todos": [
     {
-      "id": 1,
-      "userId": 1,
-      "completed": false,
-      "title": "cooking for the family"
-    },
-    {
       "id": 2,
       "title": "Reading for the upcoming exams.",
       "userId": 1,
@@ -24,8 +18,8 @@
       "completed": true
     },
     {
-      "id": "788",
-      "title": "Sleeping in the morning",
+      "id": "554",
+      "title": "Writing some code",
       "completed": false
     }
   ],
