@@ -16,7 +16,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border: 1px solid gray;
+  border: 0px solid gray;
   padding: 20px 10px;
 }
 form div {
@@ -29,9 +29,10 @@ form div input:first-of-type {
 }
 
 .container {
-  width: 100%;
+  width: vw;
   margin: auto;
   padding: 20px 10px;
+  border: 1px solid gray;
 }
 
 @media screen and (min-width: 730px) {
@@ -64,4 +65,18 @@ h1 {
 input[type="submit"] {
   background-color: blueviolet;
   border: none;
+}
+
+.todo {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }

@@ -7,9 +7,9 @@ export const TodoList = () => {
   //   const [todos, setTodos] = useState([]);
 
   return (
-    <div>
+    <div className="todo-list">
       {todos?.map((todo) => (
-        <Todo title={todo.title} key={todo.id} />
+        <Todo todo={todo} key={todo.id} />
       ))}
     </div>
   );
