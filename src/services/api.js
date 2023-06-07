@@ -17,7 +17,16 @@ export const apiSlice = createApi({
       }),
       invalidatesTags: ["Todos"],
     }),
+    addTodo: builder.mutation({
+      query: (todo) => ({
+        url: "todos",
+        method: "POST",
+        body: todo,
+      }),
+      invalidatesTags: ["Todos"],
+    }),
   }),
 });
 
-export const { useGetTodosQuery, useUpdateTodoMutation } = apiSlice;
+export const { useGetTodosQuery, useUpdateTodoMutation, useAddTodoMutation } =
+  apiSlice;

@@ -75,8 +75,19 @@ input[type="submit"] {
   align-items: center;
 }
 
+.todo:hover {
+  transform: scale(102%);
+  transition: all 200ms linear;
+}
+
 .todo-list {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.error {
+  color: red;
+  font-size: small;
+  text-align: center;
 }
